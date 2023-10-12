@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".CourseFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_title"
+                    style="@style/Label"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/title_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_hint"
+                    android:gravity="center"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/title_label" />
+
+                <TextView
+                    android:id="@+id/start_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_label"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/title_edit" />
+
+                <TextView
+                    android:id="@+id/start_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/start_hint"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/start_label" />
+
+                <DatePicker
+                    android:id="@+id/start_DP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/start_text" />
+
+                <TextView
+                    android:id="@+id/end_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/end_label"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/start_DP" />
+
+                <TextView
+                    android:id="@+id/end_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/end_hint"
+                    android:gravity="center"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/end_label" />
+
+                <DatePicker
+                    android:id="@+id/end_DP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/end_text" />
+
+                <TextView
+                    android:id="@+id/status_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_status"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/end_text"/>
+
+                <Spinner
+                    android:id="@+id/status_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:entries="@array/spinner_items"
+                    app:layout_constraintTop_toBottomOf="@id/status_label">
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_label"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/status_spinner"/>
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_hint"
+                    android:gravity="center"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/name_label" />
+
+                <TextView
+                    android:id="@+id/phone_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_label"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/name_edit"/>
+
+                <EditText
+                    android:id="@+id/phone_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_hint"
+                    android:gravity="center"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/phone_label" />
+
+                <TextView
+                    android:id="@+id/email_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_label"
+                    style="@style/Label"
+                    app:layout_constraintTop_toBottomOf="@id/phone_edit"/>
+
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:gravity="center"
+                    style="@style/Text"
+                    app:layout_constraintTop_toBottomOf="@id/email_label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notes_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    app:layout_constraintTop_toTopOf="@id/line"></View>
+
+                <LinearLayout
+                    android:id="@+id/note_section_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <TextView
+                        android:id="@+id/note_bar_label"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note_bar_label"
+                        style="@style/Label"
+                        app:layout_constraintLeft_toLeftOf="@+id/note_section_bar"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/add_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"
+                        android:contentDescription="@string/action_add"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/note_section_bar"></View>
+
+                <LinearLayout
+                    android:id="@+id/notes_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/line1"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/notes_section">
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_button"
+                    app:layout_constraintTop_toTopOf="@id/linear_layout_1" />
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_button"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

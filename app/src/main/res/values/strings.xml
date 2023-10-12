@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Student Tracker</string>
+    <string name="term_title">Term:</string>
+    <string name="term_status">Status:</string>
+    <string name="title_hint">Enter title</string>
+    <string name="status_hint">Enter status</string>
+    <string name="start_label">Starting date:</string>
+    <string name="end_label">End date:</string>
+    <string name="save_button">Save</string>
+    <string name="action_add">Add</string>
+    <string name="delete_button">Delete</string>
+    <string name="end_hint">Click to set end date</string>
+    <string name="start_hint">Click to set start date</string>
+    <string name="courses_button">Courses</string>
+    <string name="action_course">Courses</string>
+    <string name="action_assessments">Assessments</string>
+    <string name="course_status">Status:</string>
+    <string name="name_label">Instructor name:</string>
+    <string name="name_hint">Enter instructor name</string>
+    <string name="phone_label">Instructor phone:</string>
+    <string name="phone_hint">Enter instructor phone</string>
+    <string name="email_label">Instructor email:</string>
+    <string name="email_hint">Enter instructor email</string>
+    <string name="note_bar_label">Notes (optional)</string>
+    <string name="note_title">Title</string>
+    <string name="note_body_hint">Enter note here</string>
+    <string name="share_note_button">Share</string>
+    <string name="delete_note">Delete</string>
+    <string name="course_title">Course:</string>
+    <string name="dateClick">Close calendar</string>
+    <string-array name="spinner_items">
+        <item>IN_PROGRESS</item>
+        <item>COMPLETED</item>
+        <item>DROPPED</item>
+        <item>PLAN_TO_TAKE</item>
+    </string-array>
+    <string-array name="alert_spinner_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string name="alert_text">Manage Alarms</string>
+    <string name="start_alert_text">Start date alarm</string>
+    <string name="start_alert_days">Days before start date:</string>
+    <string name="end_alert_text">End date alarm</string>
+    <string name="end_alert_days">Days before end date:</string>
+    <string name="channel_name">Channel</string>
+    <string name="channel_description">Displays how many days are left before an event</string>
+    <string name="view_terms">View Terms</string>
+    <string name="view_alarms">View alarms</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="course_choice">Would you like to edit this course or manage its alarms?</string>
+    <string name="edit_assessment">Edit Course</string>
+    <string name="assessment_choice">Would you like to edit this assessment or manage its alarms?</string>
+    <string name="save_alarm">Save</string>
+    <string name="assessment_title">Assessment:</string>
+    <string name="performanceAssessment">Performance</string>
+    <string name="objectiveAssessment">Objective</string>
+
+</resources>

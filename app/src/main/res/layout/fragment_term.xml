@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".TermFragment">>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_title"
+                style="@style/Label"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_hint"
+                android:gravity="center"
+                style="@style/Text"
+                app:layout_constraintTop_toBottomOf="@id/title_label" />
+
+            <TextView
+                android:id="@+id/start_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_label"
+                style="@style/Label"
+                app:layout_constraintTop_toBottomOf="@id/title_edit" />
+
+            <TextView
+                android:id="@+id/start_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/start_hint"
+                style="@style/Text"
+                app:layout_constraintTop_toBottomOf="@id/start_label" />
+
+            <DatePicker
+                android:id="@+id/start_DP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/start_text" />
+
+            <TextView
+                android:id="@+id/end_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end_label"
+                style="@style/Label"
+                app:layout_constraintTop_toBottomOf="@id/start_DP" />
+
+            <TextView
+                android:id="@+id/end_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/end_hint"
+                android:gravity="center"
+                style="@style/Text"
+                app:layout_constraintTop_toBottomOf="@id/end_label" />
+
+            <DatePicker
+                android:id="@+id/end_DP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/end_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_button"
+                app:layout_constraintTop_toBottomOf="@id/end_DP" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_button"
+                app:layout_constraintTop_toBottomOf="@id/submit_button" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
